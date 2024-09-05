@@ -1,6 +1,15 @@
+<script setup lang="ts">
+useHead({
+  titleTemplate: (chunk) => {
+    return chunk ? `${chunk} - Revisei` : "Revisei"
+  },
+})
+</script>
+
 <template>
   <div>
-    <NuxtRouteAnnouncer />
-    <NuxtWelcome />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
