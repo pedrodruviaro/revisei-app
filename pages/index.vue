@@ -1,7 +1,9 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <h1>Homepage</h1>
+  <div class="my-12 lg:my-16">
+    <LandingPageHero />
+    <LandingPageFunctionalities />
+    <LandingPageAdvantages />
   </div>
 </template>

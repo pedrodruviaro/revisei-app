@@ -13,7 +13,6 @@ useHead({
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
-
-    <UNotifications />
+    <UNotifications :ui="{ strategy: 'override', position: 'top-0 right-0' }" />
   </div>
 </template>
