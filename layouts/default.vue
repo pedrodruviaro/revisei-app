@@ -1,14 +1,8 @@
-<script setup lang="ts">
-const router = useRouter()
-
-function handleNavigateToLoginPage() {
-  router.push("/auth/login")
-}
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
-    <LandingPageHeader @wants-to-login="handleNavigateToLoginPage" />
+    <LandingPageHeader />
     <main>
       <slot />
     </main>

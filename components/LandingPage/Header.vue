@@ -1,8 +1,4 @@
-<script setup lang="ts">
-const emits = defineEmits<{
-  "wants-to-login": []
-}>()
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header class="border-b border-cool-200 dark:border-cool-800">
@@ -18,7 +14,7 @@ const emits = defineEmits<{
         icon="i-heroicons-arrow-right-start-on-rectangle-solid"
         size="md"
         trailing
-        @click="emits('wants-to-login')"
+        to="/auth/login"
       />
     </UContainer>
   </header>

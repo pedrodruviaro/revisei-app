@@ -1,9 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const router = useRouter()
+
+function handleNavigateToLoginPage() {
+  router.push("/auth/login")
+}
+
+useSeoMeta({
+  title: "Mantenha seu carro em dia, sem complicação.",
+  description: "Mantenha seu carro em dia, sem complicação.",
+})
+</script>
 
 <template>
-  <div class="my-12 lg:my-16">
-    <LandingPageHero />
+  <div>
+    <LandingPageHero @wants-to-login="handleNavigateToLoginPage" />
     <LandingPageFunctionalities />
-    <LandingPageAdvantages />
+    <LandingPageAdvantages @wants-to-login="handleNavigateToLoginPage" />
   </div>
 </template>

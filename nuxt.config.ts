@@ -8,4 +8,7 @@ export default defineNuxtConfig({
     fallback: "light",
     storageKey: "revisei-app-color-mode",
   },
+  tailwindcss: {
+    exposeConfig: true,
+  },
 })
